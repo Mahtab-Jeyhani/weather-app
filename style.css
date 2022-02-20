@@ -71,5 +71,6 @@ h1{
     line-height: 90px;
 }
 .btn{
-    background-color: rgb(108, 160, 255);
+    background-color: rgb(89, 161, 209);
+    border: 0px;
 }
