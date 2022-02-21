@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,12 +26,12 @@
         </div>
     </form>
     </div>
-  <h1>New York</h1>
+  <h1 id="city">New York</h1>
   <ul>
       <li>
           Sunday 7:00
       </li>
-      <li>
+      <li id="description">
           Rainy
       </li>
   </ul>
@@ -39,7 +40,7 @@
         <div class="weather-temperature">
         <img src="pics/sun.png" alt="Rainy">
         <br>
-            <div class="num"> 12</div> 
+            <div class="num" id="Temperature"> 12</div> 
             <span class="units">°C|<a href="#">°F</a></span>
         </div>
         
@@ -47,13 +48,13 @@
     <div class="col-6">
         <ul>
             <li>
-                <img src="pics/rainbow.png" alt="Precipitation" width="25px" height="25px" class="precipitation"> Precipitation: 40%
+                <img src="pics/rainbow.png" alt="Precipitation" width="25px" height="25px" class="precipitation"> Pressure:<span id="pressure"> </span>
             </li>
             <li>
-                <img src="pics/humidity.png" alt="Humidity" width="25px" height="25px" class="humidity"> Humidity: 69%
+                <img src="pics/humidity.png" alt="Humidity" width="25px" height="25px" class="humidity"> Humidity:<span id="Humidity"> </span> %
             </li>
-            <li>
-                <img src="pics/tornado.png" alt="Wind" width="25px" height="25px" class="tornado"> Wind: 18 km/h
+            <li> 
+                <img src="pics/tornado.png" alt="Wind" width="25px" height="25px" class="tornado" > Wind:<span id="wind"> </span> km/h
             </li>
         </ul>
     </div>
@@ -63,8 +64,6 @@
 </div>
 </div>
 
-
-
-    <script src="app.js"></script>
+   <script src="app.js"></script>
 </body>
 </html>
