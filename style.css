@@ -12,7 +12,7 @@ body, html {
   height: 100%;
 }
 body {
-     cursor: url('pics/alien-space-character-of-pixels-for-a-game.png'),auto;
+    cursor: url('pics/alien-space-character-of-pixels-for-a-game.png'),auto; 
   /* The image used */
   background-image: url("pics/android-weather-apps.png");
 
@@ -62,7 +62,7 @@ li{
     position: relative;
     top: -50px;  
     font-size: 16px;
-    left:70px;
+    left:85px;
 }
 .units a{
     text-decoration: none;
@@ -74,4 +74,9 @@ h1{
 .btn{
     background-color: rgb(89, 161, 209);
     border: 0px;
+}
+.weather-temperature .active{
+    color: black;
+    cursor: url('pics/alien-space-character-of-pixels-for-a-game.png'),auto;
+
 }
